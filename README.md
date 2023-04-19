@@ -51,8 +51,9 @@
  preprocessat les imatges i s'han normalitzat a un rang de (0,1) mitjançant la funció de
  Keras. Això permet ser més robust i estable. També s'ha modificat el tamany de totes les
  imatges a 118x118 píxels amb 3 canals (RGB) utilitzant una funció de Keras.
- S'ha utilitzat l'ImageGenerator de Keras per dividir les imatges en tres conjunts: train, test i validació. El conjunt de train conté 6380 imatges, test conté 1821 imatges i validació conté
- 924 imatges, amb 14 classes cada una.
+ S'ha utilitzat l'ImageGenerator de Keras per dividir les imatges en tres conjunts: train, test i validació. 
+ El conjunt de train conté 6380 imatges, test    conté 1821 imatges i validació conté 924 imatges, amb 14 classes cada una.
+ 
  S'han creat diferents models de xarxes neuronals convolucionals (CNN) per aconseguir la
  millor precisió en el problema de classificació d'imatges. Després d'haver entrenat el
  model de xarxa neuronal convolucional, s'ha fet un ajust final del model. Després d'aquest
@@ -60,8 +61,7 @@
  avaluar la precisió del model en imatges que no ha vist abans.
  S'ha creat una gràfica del model per visualitzar l'exactitud (precisió) i la pèrdua (loss) en el
  temps. Això ajuda a identificar si el model està sobreajustant (overfitting) o no.
-s'ha fet una predicció
-Finalment, s'ha creat una matriu de confusió per avaluar el rendiment del model en la classificació de cada classe. facilitat i quines són les que presenten més dificultats.
+s'ha fet una predicció i finalment, s'ha creat una matriu de confusió per avaluar el rendiment del model en la classificació de cada classe. facilitat i quines són les que presenten més dificultats.
 
    Resultats
 4 capesConv, L2 Kernel regularizer, BatchNormalizer, Dropout=0,2, l’he entrenat 200 epochs.
@@ -69,8 +69,9 @@ Finalment, s'ha creat una matriu de confusió per avaluar el rendiment del model
     El resultat ha sigut: Test loss: 3.7795 accuracy: 0.4465
 
  Conclusions
-El resultat no ha sigut favorable, s’han de revisar els paràmetres per millorar l’entrenament, un altra cosa que podria ajudar seria aumentar les dades de “a” per millora l’entrenament i els resultats.
-Adjunto una tabla amb els diferents paramentres utilitzats i resultats.
+El resultat no ha sigut favorable, s’han de revisar els paràmetres per millorar l’entrenament, 
+un altra cosa que podria ajudar seria aumentar les dades de “a” per millora l’entrenament i els resultats.
+
  Referències:
 https://keras.io 
 https://www.tensorflow.org 
